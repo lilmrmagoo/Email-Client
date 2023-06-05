@@ -108,6 +108,7 @@
             this.btnCustomHost.TabIndex = 10;
             this.btnCustomHost.Text = "Custom";
             this.btnCustomHost.UseVisualStyleBackColor = true;
+            this.btnCustomHost.Click += new System.EventHandler(this.btnCustomHost_Click);
             // 
             // label3
             // 

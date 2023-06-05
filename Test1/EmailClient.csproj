@@ -93,6 +93,12 @@
     <Compile Include="frmCompose.Designer.cs">
       <DependentUpon>frmCompose.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustomService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomService.Designer.cs">
+      <DependentUpon>frmCustomService.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInbox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCompose.resx">
       <DependentUpon>frmCompose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomService.resx">
+      <DependentUpon>frmCustomService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInbox.resx">
       <DependentUpon>frmInbox.cs</DependentUpon>
