@@ -30,7 +30,7 @@ namespace Test1
         private EmailDTO parseInputs()
         {
             EmailDTO dto = new EmailDTO() { Body = txtEmailBody.Text, Subject = txtEmailSubject.Text };
-            Regex email = new Regex(@"^[\w-\.]+@(?:[\w-]+\.)+[\w-]{2,4}$");
+            Regex email = new Regex(@"^[\w-\.]+@(?:[\w-]+\.)+[\w-]{2,5}$");
             if (!email.IsMatch(txtEmailTo.Text)) { MessageBox.Show("Invalid email address in destitnation field"); return null; }
             else
             {

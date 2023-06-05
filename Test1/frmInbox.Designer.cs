@@ -31,6 +31,7 @@
             this.lstInbox = new System.Windows.Forms.ListBox();
             this.btnCompose = new System.Windows.Forms.Button();
             this.txtViewEmail = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstInbox
@@ -62,11 +63,22 @@
             this.txtViewEmail.Size = new System.Drawing.Size(616, 456);
             this.txtViewEmail.TabIndex = 3;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(128, 28);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Text = "Refresh Inbox";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // frmInbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1211, 565);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lstInbox);
             this.Controls.Add(this.txtViewEmail);
             this.Controls.Add(this.btnCompose);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.ListBox lstInbox;
         private System.Windows.Forms.Button btnCompose;
         private System.Windows.Forms.TextBox txtViewEmail;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

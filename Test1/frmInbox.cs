@@ -53,5 +53,18 @@ namespace Test1
             string formated = $"From: {message.From}\r\nTo: {message.To}\r\nSubject: {message.Subject}\r\n\n {message.TextBody}";
             txtViewEmail.Text = formated;
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            _inbox = emailService.GetInbox();
+            var items = _inbox.Select(item => new
+            {
+                DisplayText = $"{item.Envelope.From}: \r\t {item.Envelope.Subject} \r\t {item.Envelope.Date}",
+                Value = item
+            });
+            lstInbox.DisplayMember = "DisplayText";
+            lstInbox.ValueMember = "Value";
+            lstInbox.DataSource = items.ToList();
+        }
     }
 }
